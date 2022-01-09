@@ -1,0 +1,176 @@
+/* Custom properties/variables  */
+:root {
+  --main-white: #f9faf8;
+  --logo-white: #f9faf8;
+}
+
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+
+  /* Set font size for easy rem calculations
+         * default document font size = 16px, 1rem = 16px, 100% = 16px
+         * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+        */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/* Base styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+
+  /* review */
+  background-image: url('../images/acustica.png');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: #bfbfbf;
+}
+
+h1 {
+  color: #bfbfbf;
+}
+
+span {
+  display: block;
+  color: var(--logo-white);
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.width-div {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem 3rem 2rem;
+  align-items: center;
+}
+
+.content {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-white);
+  padding: 2rem;
+  box-shadow: 0 0 2rem #c4c2d8;
+}
+
+.img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+/* nav */
+
+.nav-div {
+  padding: 0 2rem 0 2rem;
+  margin: auto;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+/* first section */
+
+.first-section {
+  background-image: url('../images/guitar.png');
+  background-size: cover;
+  background-position: center center;
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.first-section h1 {
+  max-width: 1000px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.first-section-div {
+  justify-content: space-evenly;
+}
+
+/* second section */
+
+.products {
+  width: 25rem;
+}
+
+.product_main_button {
+  background-color: var(--grey-color);
+  width: 100%;
+  padding: 10px;
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.product_main_button:hover {
+  background-color: #3d3c3c;
+}
+
+/* seccion terciaria */
+
+.third-section {
+  background-image: url('../images/home.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.comments-div {
+  width: 21rem;
+}
